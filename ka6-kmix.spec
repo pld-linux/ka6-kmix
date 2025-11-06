@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	6.1.0
 %define		qtver		6.3.0
 %define		kaname		kmix
 Summary:	kmix
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	bb7247f5e87bd5644ec8216aa1a5155a
+# Source0-md5:	e6e3a4380f63ccaac2967320b5c0223b
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
@@ -107,7 +107,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/kmix
 %attr(755,root,root) %{_bindir}/kmixctrl
 %attr(755,root,root) %{_bindir}/kmixremote
-%attr(755,root,root) %{_libdir}/libkmixcore.so.*.*.*
+%{_libdir}/libkmixcore.so.*.*.*
 %ghost %{_libdir}/libkmixcore.so.6
 %{_desktopdir}/org.kde.kmix.desktop
 %{_datadir}/config.kcfg/kmixsettings.kcfg
