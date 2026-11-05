@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.08.2
+%define		kdeappsver	26.08.3
 %define		kframever	6.1.0
 %define		qtver		6.3.0
 %define		kaname		kmix
 Summary:	kmix
 Name:		ka6-%{kaname}
-Version:	26.08.2
+Version:	26.08.3
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications/Games
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	9cee3e744a9b2ebf1a43c1176beb69b6
+# Source0-md5:	d3adec3a92a73dc78c19d9e8facdcbe1
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= %{qtver}
